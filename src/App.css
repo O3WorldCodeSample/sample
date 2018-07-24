@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.player {
+    width: 20em;
+    padding: 0.5em;
+    margin: 0.5em auto;
+}
+
+.player:hover {
+    background: #F0F0F0;
+
+}
+
+.player.selected {
+    border-left: 3px solid #00FF00;
+}
+
+.player.selected:before {
+    content: "⚔ ";
+}
+
+
+#add-player-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Takes less time to do an  80% emulation of an input-group as it does to
+   track down the latest bootstrap (lighter weight too) */
+#add-player-container > input, #add-player-container > button {
+    background: white;
+    border: 1px solid #CCCCCC;
+    color: black;
+    padding: 0.5em
+}
+
+#add-player-container > input {
+    border-radius: 4px 0px 0px 4px;
+}
+
+#add-player-container > button {
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.player-game-button {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    background: #C0FFC0;
+    padding: 2rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+.player-game-button .player-game-name {
+    font-size: 2rem;
+}
+
+#player-game-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#game {
+    padding-top: 3em;
+}
+
+#game.error {
+    text-align: center;
+    color: red;
+}
